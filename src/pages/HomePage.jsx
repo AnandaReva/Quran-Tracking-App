@@ -52,9 +52,9 @@ const HomePage = () => {
             <p className={`text-center ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>No user data available</p>
           )}
 
-          <div className={`bg-gray-800 text-center py-4 rounded-lg shadow-md mb-6 ${darkMode ? 'bg-gray-800' : 'bg-gray-800'}`}>
-            <h2 className="text-white mb-2">Add New Checkpoint</h2>
-            <button className={`bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition ${darkMode ? 'text-gray-200' : 'text-gray-800'}`}>
+          <div className={`bg-gray-800 text-center py-4 rounded-lg shadow-md mb-6 ${darkMode ? 'bg-white' : 'bg-gray-800'}`}>
+            <h2 className={` ${darkMode ? 'text-gray-800' : 'text-white'} mb-2`}>Add New Checkpoint</h2>
+            <button className={` p-2 rounded-full hover:bg-gray-100 transition ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'}`}>
               <FaPlus />
             </button>
           </div>

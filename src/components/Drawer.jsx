@@ -4,7 +4,7 @@ import { Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../middlewares/AuthWrapper';
 
-const Drawer = ({ open, toggleDrawer, darkMode }) => {
+const CustomDrawer = ({ open, toggleDrawer, darkMode }) => {
     const { signOut } = useContext(AuthContext);
     const navigate = useNavigate();
 
@@ -62,4 +62,4 @@ const Drawer = ({ open, toggleDrawer, darkMode }) => {
     );
 };
 
-export default Drawer;
+export default CustomDrawer;
